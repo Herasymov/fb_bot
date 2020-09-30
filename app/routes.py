@@ -57,7 +57,7 @@ def hello():
         return verify_fb_token(token_sent)
 
     else:
-        call={0:add_new_user, 1:add_fio, 2:add_phone}
+        call={0:add_new_user, 1:add_fio, 2:add_phone, 3:final_notif}
         output = request.get_json()
         for event in output['entry']:
             messaging = event['messaging']
