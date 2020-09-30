@@ -58,6 +58,9 @@ def hello():
                     elif re.match(r'\d', message_text):
                         message = f"Наш менеджер скоро с вами свяжется"
                         bot.send_text_message(recipient_id, message)
+                    else:
+                        message = "Не валидные данные"
+                        bot.send_text_message(recipient_id, message)
 
                 else:
                     pass
